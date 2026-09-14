@@ -1,5 +1,7 @@
 const SESSION_KEY = 'capd_auth_session';
 const OVERRIDES_KEY = 'capd_mock_record_overrides';
+const SURVEY_ANSWERS_KEY = 'capd_mock_survey_answers';
+const CHAT_HISTORY_KEY = 'capd_mock_chat_history';
 const PASSWORD = 'c*123456789';
 
 const PATIENT_NAMES = ['김하늘', '이준서', '박서연', '최민준', '정다은', '윤지후', '한유진', '서지민', '강도윤', '임수아'];
@@ -21,6 +23,37 @@ const getOverrides = () => {
 const saveOverrides = (value) => localStorage.setItem(OVERRIDES_KEY, JSON.stringify(value));
 const createError = (message, status = 400) => Object.assign(new Error(message), { status });
 const number = (value) => Number(value || 0);
+const dateKeyAfter = (days) => {
+  const date = new Date();
+  date.setHours(0, 0, 0, 0);
+  date.setDate(date.getDate() + days);
+  return date.toISOString().slice(0, 10);
+};
+const getStoredObject = (key) => {
+  try { return JSON.parse(localStorage.getItem(key) || '{}'); } catch { return {}; }
+};
+const saveStoredObject = (key, value) => localStorage.setItem(key, JSON.stringify(value));
+const getDemoReservations = (patientId) => ([
+  { reservationId: `reservation-${patientId}-regular`, patientId, reservationDate: `${dateKeyAfter(7)}T10:30:00`, type: 'REGULAR_CHECKUP', doctorId: 'doctor-123456', doctorName: '담당 의사', status: 'confirmed' },
+  { reservationId: `reservation-${patientId}-blood`, patientId, reservationDate: `${dateKeyAfter(21)}T14:00:00`, type: 'BLOOD_TEST_CONSULTATION', doctorId: 'doctor-123456', doctorName: '담당 의사', status: 'confirmed' },
+  { reservationId: `reservation-${patientId}-tube`, patientId, reservationDate: `${dateKeyAfter(35)}T11:00:00`, type: 'DIALYSIS_TUBE_INSPECTION', doctorId: 'doctor-123456', doctorName: '담당 의사', status: 'confirmed' },
+]);
+const demoQuestions = (reservationId) => ([
+  { questionId: 101, reservationId, question: '최근 3일 안에 복통이나 배가 불편한 증상이 있었나요?', type: 'CHOICE', options: '["없음","가끔 있음","지속됨"]', questionReason: '복통의 빈도와 지속 여부를 확인하는 질문입니다.', status: 'APPROVED' },
+  { questionId: 102, reservationId, question: '투석액이 평소보다 혼탁하게 보인 적이 있나요?', type: 'CHOICE', options: '["없음","한 번 있음","반복됨"]', questionReason: '투석액의 색이나 투명도 변화는 의료진에게 알려야 할 중요한 정보입니다.', status: 'APPROVED' },
+  { questionId: 103, reservationId, question: '최근 발열 또는 오한이 있었나요?', type: 'CHOICE', options: '["없음","미열","38℃ 이상"]', questionReason: '감염 가능성을 확인하기 위한 질문입니다.', status: 'APPROVED' },
+  { questionId: 104, reservationId, question: '평소보다 붓거나 체중이 급격히 늘었다고 느끼나요?', type: 'CHOICE', options: '["없음","조금 있음","뚜렷함"]', questionReason: '체액 변화 가능성을 확인하는 질문입니다.', status: 'APPROVED' },
+  { questionId: 105, reservationId, question: '의료진에게 미리 전달하고 싶은 특이사항이 있다면 적어주세요.', type: 'TEXT', options: '[]', questionReason: '진료 전에 의료진에게 전달할 내용을 자유롭게 작성하는 항목입니다.', status: 'APPROVED' },
+]);
+const symptomReply = (text) => {
+  const message = String(text || '').toLowerCase();
+  const has = (...words) => words.some(word => message.includes(word));
+  if (has('혼탁', '뿌옇', '탁해')) return '투석액이 혼탁하게 보인다면 시간, 색 변화, 복통·발열 동반 여부를 기록해 담당 의료진에게 빠르게 알려주세요. 심한 복통, 38℃ 이상 발열, 오한이 함께 있으면 지체하지 말고 의료기관에 연락하세요.';
+  if (has('배', '복통', '아파', '통증')) return '복부 불편감은 시작 시점, 위치, 강도와 함께 투석액 변화·발열 여부를 기록해 두면 도움이 됩니다. 통증이 심해지거나 구토, 발열, 혼탁한 투석액이 동반되면 즉시 의료기관에 연락하세요.';
+  if (has('붓', '부종', '체중', '무거')) return '붓기나 체중 변화는 최근 체중, 소변량, 숨참 여부와 함께 기록해 주세요. 갑자기 숨이 차거나 가슴이 답답하고 체중이 빠르게 늘면 즉시 의료기관에 연락해야 합니다.';
+  if (has('열', '오한', '발열')) return '체온을 측정해 기록하고, 오한·복통·혼탁한 투석액이 함께 있는지 확인해 주세요. 38℃ 이상의 발열 또는 증상 악화 시에는 담당 의료진이나 응급의료기관에 즉시 문의하세요.';
+  return '말씀해주신 증상은 발생 시점, 지속 시간, 불편한 정도와 함께 기록해 의료진에게 전달하면 도움이 됩니다. 증상이 갑자기 심해지거나 호흡곤란, 심한 통증, 의식 저하가 있으면 즉시 119 또는 의료기관에 도움을 요청하세요.';
+};
 
 async function loadSeed() {
   if (seedPromise) return seedPromise;
@@ -154,8 +187,42 @@ export async function mockApiRequest(config) {
     if (normalizedMethod === 'delete') { record.sessions = record.sessions.filter(session => session.capdSessionId !== sessionId); return saveRecord(recordForPayload({}, patientId, record)); }
     const session = record.sessions.find(item => item.capdSessionId === sessionId); Object.assign(session, recordForPayload({ sessions: [{ ...session, ...data }] }, patientId, record).sessions[0]); saveRecord(recordForPayload({}, patientId, record)); return session;
   }
-  if (url === '/api/reservations/patient') return [];
-  if (url === '/api/reservations/doctor/date') return [];
+  if (url === '/api/reservations/patient') return getDemoReservations(patientId);
+  if (url === '/api/reservations/doctor/date') return seed.patients.flatMap(item => getDemoReservations(item.patientId))
+    .filter(reservation => reservation.reservationDate.startsWith(params.date || ''));
+  if (url === '/api/chat/patient' && normalizedMethod === 'get') return getStoredObject(CHAT_HISTORY_KEY)[patientId] || [];
+  if (url === '/api/chat/patient' && normalizedMethod === 'post') {
+    const allChats = getStoredObject(CHAT_HISTORY_KEY);
+    const chat = { chatId: `chat-${Date.now()}`, userText: data.userText || '', aiText: symptomReply(data.userText), createdAt: new Date().toISOString() };
+    allChats[patientId] = [...(allChats[patientId] || []), chat];
+    saveStoredObject(CHAT_HISTORY_KEY, allChats);
+    return chat;
+  }
+  if (url.match(/^\/api\/surveys\/[^/]+\/patient\/questions$/)) {
+    const reservationId = decodeURIComponent(url.split('/')[3]);
+    const answers = getStoredObject(SURVEY_ANSWERS_KEY)[reservationId] || [];
+    return demoQuestions(reservationId).map(question => {
+      const answer = answers.find(item => Number(item.questionId) === question.questionId);
+      return answer ? { ...question, answered: true, answer: answer.answer } : question;
+    });
+  }
+  if (url.match(/^\/api\/surveys\/[^/]+\/patient\/answers$/)) {
+    const reservationId = decodeURIComponent(url.split('/')[3]);
+    return getStoredObject(SURVEY_ANSWERS_KEY)[reservationId] || [];
+  }
+  if (url.match(/^\/api\/surveys\/[^/]+\/answers$/) && normalizedMethod === 'post') {
+    const reservationId = decodeURIComponent(url.split('/')[3]);
+    const allAnswers = getStoredObject(SURVEY_ANSWERS_KEY);
+    allAnswers[reservationId] = (data.answers || []).map((answer, index) => ({ answerId: `answer-${reservationId}-${answer.questionId}`, questionId: answer.questionId, patientId, answer: answer.answer, createdAt: new Date().toISOString(), id: index + 1 }));
+    saveStoredObject(SURVEY_ANSWERS_KEY, allAnswers);
+    return allAnswers[reservationId];
+  }
+  if (url.match(/^\/api\/surveys\/questions\/[^/]+\/explain$/)) {
+    const questionId = Number(decodeURIComponent(url.split('/')[4]));
+    const question = demoQuestions('demo').find(item => item.questionId === questionId);
+    return { explanation: question?.questionReason || '증상과 최근 변화를 의료진에게 알리기 위한 질문입니다.' };
+  }
+  if (url.match(/^\/api\/surveys\/[^/]+\/questions$/)) return demoQuestions(decodeURIComponent(url.split('/')[3]));
   if (url === '/api/anomaly/' + patientId) return [];
   if (url.startsWith('/api/anomaly/')) return [];
   if (url.startsWith('/api/reports/')) return [];
