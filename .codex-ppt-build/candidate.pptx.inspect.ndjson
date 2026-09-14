@@ -1,0 +1,203 @@
+{"kind":"deck","id":"pr/5te94d","name":"Deck"}
+{"kind":"layout","layoutId":"4b313c84-15c3-427f-8ca5-37960e930e45","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"261ff417-4095-45eb-a08b-1374b0028461","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/od4tq6","slide":1,"title":"CAPD Care","textShapes":4}
+{"kind":"shape","id":"sh/mpk7algn","slide":1,"bbox":[0,0,520,720]}
+{"kind":"shape","id":"sh/9sb650fe","slide":1,"bbox":[566,60,644,600]}
+{"kind":"textbox","id":"sh/vedo7qx4","slide":1,"text":"CAPD Care","textPreview":"CAPD Care","textChars":9,"textLines":1,"bbox":[62,184,410,66]}
+{"kind":"textbox","id":"sh/utk7elgz","slide":1,"text":"복막투석 환자 맞춤형\n관리 시스템","textPreview":"복막투석 환자 맞춤형 | 관리 시스템","textChars":18,"textLines":2,"bbox":[62,266,420,94]}
+{"kind":"shape","id":"sh/hgvq90fa","slide":1,"bbox":[62,397,96,4]}
+{"kind":"textbox","id":"sh/wfmpgvyp","slide":1,"text":"환자 기록부터 의료진 모니터링까지","textPreview":"환자 기록부터 의료진 모니터링까지","textChars":18,"textLines":1,"bbox":[62,424,370,28]}
+{"kind":"textbox","id":"sh/by9ov6x0","slide":1,"text":"프로젝트 발표","textPreview":"프로젝트 발표","textChars":7,"textLines":1,"bbox":[62,616,160,24]}
+{"kind":"image","id":"im/tove50j6","slide":1,"name":"","geometry":"roundRect","alt":"CAPD Care 로그인 화면","bbox":[594,88,588,544]}
+{"kind":"notes","id":"nt/od4tq6","slide":1,"text":"화면 출처: 사용자 제공 CAPD Care 실행 화면\n- C:\\Users\\user\\Desktop\\capd\\로그인화면.png"}
+{"kind":"slide","id":"sl/iibvew","slide":2,"title":"02","textShapes":12}
+{"kind":"textbox","id":"sh/kra58fm1","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[56,40,60,30]}
+{"kind":"textbox","id":"sh/zq1ofalg","slide":2,"text":"문제 정의와 목표","textPreview":"문제 정의와 목표","textChars":9,"textLines":1,"bbox":[56,74,1110,54]}
+{"kind":"textbox","id":"sh/ypsn654v","slide":2,"text":"매일 쌓이는 복막투석 기록을 환자와 의료진이 같은 흐름에서 확인하도록 설계했습니다","textPreview":"매일 쌓이는 복막투석 기록을 환자와 의료진이 같은 흐름에서 확인하도록 설계했습니다","textChars":45,"textLines":1,"bbox":[58,133,1080,32]}
+{"kind":"shape","id":"sh/xoj6d03a","slide":2,"bbox":[56,178,1168,2]}
+{"kind":"textbox","id":"sh/c3a54vmp","slide":2,"text":"기록의 단절","textPreview":"기록의 단절","textChars":6,"textLines":1,"bbox":[74,244,270,40]}
+{"kind":"textbox","id":"sh/b21obq54","slide":2,"text":"환자는 매일 투석량과 건강 상태를\n기록하지만, 의료진은 변화 신호를\n한눈에 파악하기 어렵습니다.","textPreview":"환자는 매일 투석량과 건강 상태를 | 기록하지만, 의료진은 변화 신호를 | 한눈에 파악하기 어렵습니다.","textChars":53,"textLines":3,"bbox":[74,304,300,104]}
+{"kind":"shape","id":"sh/a1sn2l4z","slide":2,"bbox":[409,234,2,274]}
+{"kind":"textbox","id":"sh/hkn6p43e","slide":2,"text":"CAPD Care의 목표","textPreview":"CAPD Care의 목표","textChars":13,"textLines":1,"bbox":[470,244,370,40]}
+{"kind":"textbox","id":"sh/wzepgzm9","slide":2,"text":"환자 기록을 기반으로\n상태 확인, 설문, 예약, 상담을\n연결하는 관리 화면을 제공합니다.","textPreview":"환자 기록을 기반으로 | 상태 확인, 설문, 예약, 상담을 | 연결하는 관리 화면을 제공합니다.","textChars":49,"textLines":3,"bbox":[470,304,360,104]}
+{"kind":"shape","id":"sh/2tgzi583","slide":2,"bbox":[894,226,272,210]}
+{"kind":"textbox","id":"sh/3upgbapo","slide":2,"text":"하루 기록","textPreview":"하루 기록","textChars":5,"textLines":1,"bbox":[924,262,212,28]}
+{"kind":"textbox","id":"sh/ovyhkfq9","slide":2,"text":"투석 · 건강 수치","textPreview":"투석 · 건강 수치","textChars":10,"textLines":1,"bbox":[924,301,212,34]}
+{"kind":"textbox","id":"sh/pw7ydk7u","slide":2,"text":"환자 포털과 EMR 화면에서\n각 역할에 맞게 확인","textPreview":"환자 포털과 EMR 화면에서 | 각 역할에 맞게 확인","textChars":27,"textLines":2,"bbox":[924,358,210,48]}
+{"kind":"textbox","id":"sh/e5wze587","slide":2,"text":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textPreview":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textChars":30,"textLines":1,"bbox":[56,682,600,18]}
+{"kind":"textbox","id":"sh/f65g7a9s","slide":2,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1190,680,34,18]}
+{"kind":"notes","id":"nt/iibvew","slide":2,"text":""}
+{"kind":"slide","id":"sl/ms1fdh","slide":3,"title":"03","textShapes":14}
+{"kind":"textbox","id":"sh/3q5onyh4","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[56,40,60,30]}
+{"kind":"textbox","id":"sh/4repg3yp","slide":3,"text":"서비스 흐름","textPreview":"서비스 흐름","textChars":6,"textLines":1,"bbox":[56,74,1110,54]}
+{"kind":"textbox","id":"sh/psn6p8za","slide":3,"text":"환자 입력이 의료진의 모니터링과 후속 진료로 이어집니다","textPreview":"환자 입력이 의료진의 모니터링과 후속 진료로 이어집니다","textChars":30,"textLines":1,"bbox":[58,133,1080,32]}
+{"kind":"shape","id":"sh/qdw7itgv","slide":3,"bbox":[56,178,1168,2]}
+{"kind":"shape","id":"sh/re5oryhg","slide":3,"bbox":[74,253,310,244]}
+{"kind":"shape","id":"sh/cfypk3y1","slide":3,"bbox":[100,280,50,50]}
+{"kind":"textbox","id":"sh/dg76t8z6","slide":3,"text":"환자","textPreview":"환자","textChars":2,"textLines":1,"bbox":[168,288,184,28]}
+{"kind":"textbox","id":"sh/ehg7mdgr","slide":3,"text":"투석 기록, 건강 설문,\n증상 상담, 방문 일정 확인","textPreview":"투석 기록, 건강 설문, | 증상 상담, 방문 일정 확인","textChars":29,"textLines":2,"bbox":[102,360,254,70]}
+{"kind":"shape","id":"sh/zip8vihc","slide":3,"bbox":[450,253,310,244]}
+{"kind":"shape","id":"sh/z6dsrm9o","slide":3,"bbox":[476,280,50,50]}
+{"kind":"textbox","id":"sh/y5kbyhs3","slide":3,"text":"기록 데이터","textPreview":"기록 데이터","textChars":6,"textLines":1,"bbox":[544,288,184,28]}
+{"kind":"textbox","id":"sh/lsvatcre","slide":3,"text":"일일 건강 수치와\n투석 교환 내역을 저장","textPreview":"일일 건강 수치와 | 투석 교환 내역을 저장","textChars":22,"textLines":2,"bbox":[478,360,254,70]}
+{"kind":"shape","id":"sh/0rmt07a9","slide":3,"bbox":[826,253,310,244]}
+{"kind":"shape","id":"sh/b2tsn29c","slide":3,"bbox":[852,280,50,50]}
+{"kind":"textbox","id":"sh/q1kbuxsr","slide":3,"text":"의료진","textPreview":"의료진","textChars":3,"textLines":1,"bbox":[920,288,184,28]}
+{"kind":"textbox","id":"sh/d4bapcri","slide":3,"text":"환자 현황, 차트, 설문,\n예약을 한 화면에서 관리","textPreview":"환자 현황, 차트, 설문, | 예약을 한 화면에서 관리","textChars":28,"textLines":2,"bbox":[854,360,254,70]}
+{"kind":"textbox","id":"sh/c32tw7ax","slide":3,"text":"기록","textPreview":"기록","textChars":2,"textLines":1,"bbox":[388,354,42,28]}
+{"kind":"textbox","id":"sh/vyxcz69w","slide":3,"text":"확인","textPreview":"확인","textChars":2,"textLines":1,"bbox":[764,354,42,28]}
+{"kind":"shape","id":"sh/ax4b61sb","slide":3,"bbox":[384,392,48,3]}
+{"kind":"shape","id":"sh/6t8vy5cj","slide":3,"bbox":[760,392,48,3]}
+{"kind":"textbox","id":"sh/ruhwrqt4","slide":3,"text":"환자와 의료진의 화면을 분리하면서도 동일한 데이터 흐름을 유지","textPreview":"환자와 의료진의 화면을 분리하면서도 동일한 데이터 흐름을 유지","textChars":34,"textLines":1,"bbox":[74,562,1060,34]}
+{"kind":"textbox","id":"sh/svqd0vu9","slide":3,"text":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textPreview":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textChars":30,"textLines":1,"bbox":[56,682,600,18]}
+{"kind":"textbox","id":"sh/twzet0bu","slide":3,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1190,680,34,18]}
+{"kind":"notes","id":"nt/ms1fdh","slide":3,"text":""}
+{"kind":"slide","id":"sl/p62dur","slide":4,"title":"04","textShapes":11}
+{"kind":"textbox","id":"sh/fuh4na9w","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[56,40,60,30]}
+{"kind":"textbox","id":"sh/gvqlwfqh","slide":4,"text":"환자 포털","textPreview":"환자 포털","textChars":5,"textLines":1,"bbox":[56,74,1110,54]}
+{"kind":"textbox","id":"sh/1wjmpkr2","slide":4,"text":"환자가 필요한 기능을 한 화면에서 빠르게 선택합니다","textPreview":"환자가 필요한 기능을 한 화면에서 빠르게 선택합니다","textChars":28,"textLines":1,"bbox":[58,133,1080,32]}
+{"kind":"shape","id":"sh/6p83q58f","slide":4,"bbox":[56,178,1168,2]}
+{"kind":"textbox","id":"sh/srqlsvq5","slide":4,"text":"환자 중심 메뉴","textPreview":"환자 중심 메뉴","textChars":8,"textLines":1,"bbox":[834,238,315,36]}
+{"kind":"shape","id":"sh/tszml0rq","slide":4,"bbox":[836,300,296,40]}
+{"kind":"textbox","id":"sh/i1o3ml83","slide":4,"text":"투석 기록하기","textPreview":"투석 기록하기","textChars":7,"textLines":1,"bbox":[856,310,252,22]}
+{"kind":"shape","id":"sh/j2xkfq9o","slide":4,"bbox":[836,355,296,40]}
+{"kind":"textbox","id":"sh/fatgbupw","slide":4,"text":"증상 상담하기","textPreview":"증상 상담하기","textChars":7,"textLines":1,"bbox":[856,365,252,22]}
+{"kind":"shape","id":"sh/u9kfip8r","slide":4,"bbox":[836,410,296,40]}
+{"kind":"textbox","id":"sh/hcbyd472","slide":4,"text":"투석 기록보기","textPreview":"투석 기록보기","textChars":7,"textLines":1,"bbox":[856,420,252,22]}
+{"kind":"shape","id":"sh/gb2xkzqh","slide":4,"bbox":[836,465,296,40]}
+{"kind":"textbox","id":"sh/3edgfep8","slide":4,"text":"건강 설문 조사","textPreview":"건강 설문 조사","textChars":8,"textLines":1,"bbox":[856,475,252,22]}
+{"kind":"shape","id":"sh/2d4zm98n","slide":4,"bbox":[836,520,296,40]}
+{"kind":"textbox","id":"sh/p0vyh47e","slide":4,"text":"방문 일정 확인","textPreview":"방문 일정 확인","textChars":8,"textLines":1,"bbox":[856,530,252,22]}
+{"kind":"textbox","id":"sh/4fmhojqt","slide":4,"text":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textPreview":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textChars":30,"textLines":1,"bbox":[56,682,600,18]}
+{"kind":"textbox","id":"sh/ji9g3a9o","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1190,680,34,18]}
+{"kind":"image","id":"im/exkja9s3","slide":4,"name":"","geometry":"roundRect","alt":"CAPD Care 환자 메인 화면","bbox":[56,215,724,430]}
+{"kind":"notes","id":"nt/p62dur","slide":4,"text":"화면 출처: 사용자 제공 CAPD Care 실행 화면\n- C:\\Users\\user\\Desktop\\capd\\환자 메인.png"}
+{"kind":"slide","id":"sl/zi7hb6","slide":5,"title":"05","textShapes":7}
+{"kind":"textbox","id":"sh/g7adcb6p","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[56,40,60,30]}
+{"kind":"textbox","id":"sh/f61cj65k","slide":5,"text":"투석 기록 입력과 확인","textPreview":"투석 기록 입력과 확인","textChars":12,"textLines":1,"bbox":[56,74,1110,54]}
+{"kind":"textbox","id":"sh/e5sva1oz","slide":5,"text":"교환 회차와 일일 건강 수치를 입력하고, 날짜별 기록을 다시 확인합니다","textPreview":"교환 회차와 일일 건강 수치를 입력하고, 날짜별 기록을 다시 확인합니다","textChars":39,"textLines":1,"bbox":[58,133,1080,32]}
+{"kind":"shape","id":"sh/t4juhwne","slide":5,"bbox":[56,178,1168,2]}
+{"kind":"shape","id":"sh/618b61on","slide":5,"bbox":[112,602,180,28]}
+{"kind":"textbox","id":"sh/d03ut0ni","slide":5,"text":"1. 일일 기록 입력","textPreview":"1. 일일 기록 입력","textChars":11,"textLines":1,"bbox":[112,607,180,16]}
+{"kind":"shape","id":"sh/czudkvmx","slide":5,"bbox":[746,602,190,28]}
+{"kind":"textbox","id":"sh/qpg32p4j","slide":5,"text":"2. 날짜별 기록 확인","textPreview":"2. 날짜별 기록 확인","textChars":12,"textLines":1,"bbox":[746,607,190,16]}
+{"kind":"textbox","id":"sh/rqp4vul4","slide":5,"text":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textPreview":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textChars":30,"textLines":1,"bbox":[56,682,600,18]}
+{"kind":"textbox","id":"sh/cryl4zmp","slide":5,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1190,680,34,18]}
+{"kind":"image","id":"im/1ojuto7e","slide":5,"name":"","geometry":"roundRect","alt":"투석 기록 입력 화면","bbox":[62,215,400,420]}
+{"kind":"image","id":"im/u1sbito3","slide":5,"name":"","geometry":"roundRect","alt":"투석 기록 확인 화면","bbox":[502,215,716,420]}
+{"kind":"notes","id":"nt/zi7hb6","slide":5,"text":"화면 출처: 사용자 제공 CAPD Care 실행 화면\n- C:\\Users\\user\\Desktop\\capd\\투석 기록하기.png\n- C:\\Users\\user\\Desktop\\capd\\투석기록 확인.png"}
+{"kind":"slide","id":"sl/0bar81","slide":6,"title":"06","textShapes":8}
+{"kind":"textbox","id":"sh/gbqlkfad","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[56,40,60,30]}
+{"kind":"textbox","id":"sh/fahkra98","slide":6,"text":"환자 지원 기능","textPreview":"환자 지원 기능","textChars":8,"textLines":1,"bbox":[56,74,1110,54]}
+{"kind":"textbox","id":"sh/u98ji5sn","slide":6,"text":"증상 상담, 건강 설문, 방문 일정 확인으로 진료 전 준비를 돕습니다","textPreview":"증상 상담, 건강 설문, 방문 일정 확인으로 진료 전 준비를 돕습니다","textChars":38,"textLines":1,"bbox":[58,133,1080,32]}
+{"kind":"shape","id":"sh/t8z2p0b2","slide":6,"bbox":[56,178,1168,2]}
+{"kind":"shape","id":"sh/5kf2l0bq","slide":6,"bbox":[145,640,180,28]}
+{"kind":"textbox","id":"sh/kj61cval","slide":6,"text":"AI 증상 상담","textPreview":"AI 증상 상담","textChars":8,"textLines":1,"bbox":[145,645,180,16]}
+{"kind":"shape","id":"sh/yl8r6d8j","slide":6,"bbox":[555,640,170,28]}
+{"kind":"textbox","id":"sh/zmhsfip4","slide":6,"text":"건강 설문","textPreview":"건강 설문","textChars":5,"textLines":1,"bbox":[555,645,170,16]}
+{"kind":"shape","id":"sh/0nq98nqp","slide":6,"bbox":[960,640,170,28]}
+{"kind":"textbox","id":"sh/lozahs7a","slide":6,"text":"방문 일정","textPreview":"방문 일정","textChars":5,"textLines":1,"bbox":[960,645,170,16]}
+{"kind":"textbox","id":"sh/qhor2d8n","slide":6,"text":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textPreview":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textChars":30,"textLines":1,"bbox":[56,682,600,18]}
+{"kind":"textbox","id":"sh/bihsbips","slide":6,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1190,680,34,18]}
+{"kind":"image","id":"im/hcrax8vi","slide":6,"name":"","geometry":"roundRect","alt":"AI 증상 상담 화면","bbox":[56,216,360,402]}
+{"kind":"image","id":"im/a9gr2dcr","slide":6,"name":"","geometry":"roundRect","alt":"건강 설문 조사 화면","bbox":[460,216,360,402]}
+{"kind":"image","id":"im/vap8vydc","slide":6,"name":"","geometry":"roundRect","alt":"방문 일정 확인 화면","bbox":[864,216,360,402]}
+{"kind":"notes","id":"nt/0bar81","slide":6,"text":"화면 출처: 사용자 제공 CAPD Care 실행 화면\n- C:\\Users\\user\\Desktop\\capd\\환자 증상 상담.png\n- C:\\Users\\user\\Desktop\\capd\\건강 설문 조사.png\n- C:\\Users\\user\\Desktop\\capd\\방문 일정 확인.png"}
+{"kind":"slide","id":"sl/0dru6p","slide":7,"title":"07","textShapes":9}
+{"kind":"textbox","id":"sh/f2pg7edw","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[56,40,60,30]}
+{"kind":"textbox","id":"sh/03ih0jeh","slide":7,"text":"의료진 전체 환자 모니터링","textPreview":"의료진 전체 환자 모니터링","textChars":14,"textLines":1,"bbox":[56,74,1110,54]}
+{"kind":"textbox","id":"sh/14ry9ov2","slide":7,"text":"담당 환자의 최신 투석량과 건강 수치를 목록에서 비교합니다","textPreview":"담당 환자의 최신 투석량과 건강 수치를 목록에서 비교합니다","textChars":32,"textLines":1,"bbox":[58,133,1080,32]}
+{"kind":"shape","id":"sh/qxgzupwf","slide":7,"bbox":[56,178,1168,2]}
+{"kind":"shape","id":"sh/szyhwzel","slide":7,"bbox":[961,235,230,86]}
+{"kind":"textbox","id":"sh/d07y54v6","slide":7,"text":"담당 환자","textPreview":"담당 환자","textChars":5,"textLines":1,"bbox":[987,254,160,20]}
+{"kind":"textbox","id":"sh/at0z6twj","slide":7,"text":"10명","textPreview":"10명","textChars":3,"textLines":1,"bbox":[987,279,160,30]}
+{"kind":"textbox","id":"sh/bu90fyd4","slide":7,"text":"제출 상태와\n미니 추이를 함께 표시","textPreview":"제출 상태와 | 미니 추이를 함께 표시","textChars":19,"textLines":2,"bbox":[961,362,230,68]}
+{"kind":"textbox","id":"sh/zqhs3i1c","slide":7,"text":"개별 환자 화면으로 이동해\n상세 기록을 확인합니다.","textPreview":"개별 환자 화면으로 이동해 | 상세 기록을 확인합니다.","textChars":28,"textLines":2,"bbox":[961,447,230,54]}
+{"kind":"textbox","id":"sh/yp8budkr","slide":7,"text":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textPreview":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textChars":30,"textLines":1,"bbox":[56,682,600,18]}
+{"kind":"textbox","id":"sh/lsza5sji","slide":7,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1190,680,34,18]}
+{"kind":"image","id":"im/ulkne1oz","slide":7,"name":"","geometry":"roundRect","alt":"의사 전체 환자 모니터링 화면","bbox":[56,207,870,520]}
+{"kind":"notes","id":"nt/0dru6p","slide":7,"text":"화면 출처: 사용자 제공 CAPD Care 실행 화면\n- C:\\Users\\user\\Desktop\\capd\\의사 메인화면.png"}
+{"kind":"slide","id":"sl/3s1zf5","slide":8,"title":"08","textShapes":5}
+{"kind":"textbox","id":"sh/ah0retsf","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[56,40,60,30]}
+{"kind":"textbox","id":"sh/xkrq98rq","slide":8,"text":"환자 상세 현황과 차트","textPreview":"환자 상세 현황과 차트","textChars":12,"textLines":1,"bbox":[56,74,1110,54]}
+{"kind":"textbox","id":"sh/wji9g3a5","slide":8,"text":"한 명의 환자를 선택해 활력 징후, 투석 기록, AI 상태 분석을 확인합니다","textPreview":"한 명의 환자를 선택해 활력 징후, 투석 기록, AI 상태 분석을 확인합니다","textChars":42,"textLines":1,"bbox":[58,133,1080,32]}
+{"kind":"shape","id":"sh/nep83y9o","slide":8,"bbox":[56,178,1168,2]}
+{"kind":"textbox","id":"sh/8fi9cja9","slide":8,"text":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textPreview":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textChars":30,"textLines":1,"bbox":[56,682,600,18]}
+{"kind":"textbox","id":"sh/rat8fi9s","slide":8,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1190,680,34,18]}
+{"kind":"image","id":"im/jet4z65w","slide":8,"name":"","geometry":"roundRect","alt":"의사 환자 개별 화면","bbox":[56,207,600,470]}
+{"kind":"image","id":"im/4f25sb6h","slide":8,"name":"","geometry":"roundRect","alt":"환자 상세 차트 화면","bbox":[692,207,532,470]}
+{"kind":"notes","id":"nt/3s1zf5","slide":8,"text":"화면 출처: 사용자 제공 CAPD Care 실행 화면\n- C:\\Users\\user\\Desktop\\capd\\의사환자 개별화면.png\n- C:\\Users\\user\\Desktop\\capd\\환자 상세 차트.png"}
+{"kind":"slide","id":"sl/x7e27f","slide":9,"title":"09","textShapes":8}
+{"kind":"textbox","id":"sh/vy90ruhc","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[56,40,60,30]}
+{"kind":"textbox","id":"sh/gzi1kzix","slide":9,"text":"의료진 투석 기록 로그","textPreview":"의료진 투석 기록 로그","textChars":12,"textLines":1,"bbox":[56,74,1110,54]}
+{"kind":"textbox","id":"sh/h0rit4z2","slide":9,"text":"날짜별 교환 내역과 수치를 펼쳐 보고 상태를 검토합니다","textPreview":"날짜별 교환 내역과 수치를 펼쳐 보고 상태를 검토합니다","textChars":30,"textLines":1,"bbox":[58,133,1080,32]}
+{"kind":"shape","id":"sh/i10jmp0n","slide":9,"bbox":[56,178,1168,2]}
+{"kind":"textbox","id":"sh/43i1ozit","slide":9,"text":"날짜별 확인","textPreview":"날짜별 확인","textChars":6,"textLines":1,"bbox":[1050,246,150,30]}
+{"kind":"textbox","id":"sh/54b2x4ze","slide":9,"text":"투석 교환 시간, 농도,\n주입량, 배액량, 제수량을\n날짜별로 확인합니다.","textPreview":"투석 교환 시간, 농도, | 주입량, 배액량, 제수량을 | 날짜별로 확인합니다.","textChars":40,"textLines":3,"bbox":[1050,300,155,82]}
+{"kind":"shape","id":"sh/y5gja50j","slide":9,"bbox":[1050,424,140,28]}
+{"kind":"textbox","id":"sh/j6p0jah4","slide":9,"text":"정상 상태","textPreview":"정상 상태","textChars":5,"textLines":1,"bbox":[1050,429,140,16]}
+{"kind":"textbox","id":"sh/badsfi1o","slide":9,"text":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textPreview":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textChars":30,"textLines":1,"bbox":[56,682,600,18]}
+{"kind":"textbox","id":"sh/q94rmd03","slide":9,"text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1190,680,34,18]}
+{"kind":"image","id":"im/yp4rytgj","slide":9,"name":"","geometry":"roundRect","alt":"의사 투석 기록 로그 화면","bbox":[58,210,950,466]}
+{"kind":"notes","id":"nt/x7e27f","slide":9,"text":"화면 출처: 사용자 제공 CAPD Care 실행 화면\n- C:\\Users\\user\\Desktop\\capd\\의사 투석기록 확인.png"}
+{"kind":"slide","id":"sl/hwllhg","slide":10,"title":"010","textShapes":7}
+{"kind":"textbox","id":"sh/etwbidcz","slide":10,"text":"010","textPreview":"010","textChars":3,"textLines":1,"bbox":[56,40,60,30]}
+{"kind":"textbox","id":"sh/1wnadsbq","slide":10,"text":"예약 등록과 예약 목록","textPreview":"예약 등록과 예약 목록","textChars":12,"textLines":1,"bbox":[56,74,1110,54]}
+{"kind":"textbox","id":"sh/0vetknu5","slide":10,"text":"의료진이 환자를 선택해 진료 일정을 등록하고 전체 예약을 관리합니다","textPreview":"의료진이 환자를 선택해 진료 일정을 등록하고 전체 예약을 관리합니다","textChars":37,"textLines":1,"bbox":[58,133,1080,32]}
+{"kind":"shape","id":"sh/ny5sfitg","slide":10,"bbox":[56,178,1168,2]}
+{"kind":"shape","id":"sh/ozytonu1","slide":10,"bbox":[240,656,170,28]}
+{"kind":"textbox","id":"sh/bmpsj2ts","slide":10,"text":"예약 등록","textPreview":"예약 등록","textChars":5,"textLines":1,"bbox":[240,661,170,16]}
+{"kind":"shape","id":"sh/a1gbqxc7","slide":10,"bbox":[866,656,180,28]}
+{"kind":"textbox","id":"sh/cvip876h","slide":10,"text":"예약 내역 관리","textPreview":"예약 내역 관리","textChars":8,"textLines":1,"bbox":[866,661,180,16]}
+{"kind":"textbox","id":"sh/dwr6hsn2","slide":10,"text":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textPreview":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textChars":30,"textLines":1,"bbox":[56,682,600,18]}
+{"kind":"textbox","id":"sh/q9076xob","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1190,680,34,18]}
+{"kind":"image","id":"im/ne1wr6pw","slide":10,"name":"","geometry":"roundRect","alt":"환자 예약 등록 화면","bbox":[56,214,556,425]}
+{"kind":"image","id":"im/ofadkrqh","slide":10,"name":"","geometry":"roundRect","alt":"전체 예약 내역 화면","bbox":[650,214,574,425]}
+{"kind":"notes","id":"nt/hwllhg","slide":10,"text":"화면 출처: 사용자 제공 CAPD Care 실행 화면\n- C:\\Users\\user\\Desktop\\capd\\예약등록.png\n- C:\\Users\\user\\Desktop\\capd\\예약확인.png"}
+{"kind":"slide","id":"sl/ranmai","slide":11,"title":"011","textShapes":7}
+{"kind":"textbox","id":"sh/0v2l8r25","slide":11,"text":"011","textPreview":"011","textChars":3,"textLines":1,"bbox":[56,40,60,30]}
+{"kind":"textbox","id":"sh/zutkzmlk","slide":11,"text":"AI 설문 승인과 응답 확인","textPreview":"AI 설문 승인과 응답 확인","textChars":15,"textLines":1,"bbox":[56,74,1110,54]}
+{"kind":"textbox","id":"sh/et0j6hkz","slide":11,"text":"의료진이 진료 전 설문 문항을 검토하고 환자의 응답을 확인합니다","textPreview":"의료진이 진료 전 설문 문항을 검토하고 환자의 응답을 확인합니다","textChars":35,"textLines":1,"bbox":[58,133,1080,32]}
+{"kind":"shape","id":"sh/dsr2xc3e","slide":11,"bbox":[56,178,1168,2]}
+{"kind":"shape","id":"sh/qp0j2xk3","slide":11,"bbox":[236,656,190,28]}
+{"kind":"textbox","id":"sh/p4r2tc3i","slide":11,"text":"문항 승인 및 관리","textPreview":"문항 승인 및 관리","textChars":10,"textLines":1,"bbox":[236,661,190,16]}
+{"kind":"shape","id":"sh/43i1072x","slide":11,"bbox":[866,656,170,28]}
+{"kind":"textbox","id":"sh/adwzmpof","slide":11,"text":"응답 확인","textPreview":"응답 확인","textChars":5,"textLines":1,"bbox":[866,661,170,16]}
+{"kind":"textbox","id":"sh/be5gfu50","slide":11,"text":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textPreview":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textChars":30,"textLines":1,"bbox":[56,682,600,18]}
+{"kind":"textbox","id":"sh/wfehozml","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1190,680,34,18]}
+{"kind":"image","id":"im/1kr258bq","slide":11,"name":"","geometry":"roundRect","alt":"AI 설문 승인 및 관리 화면","bbox":[56,214,566,425]}
+{"kind":"image","id":"im/ehg3atcz","slide":11,"name":"","geometry":"roundRect","alt":"설문 응답 확인 화면","bbox":[658,214,566,425]}
+{"kind":"notes","id":"nt/ranmai","slide":11,"text":"화면 출처: 사용자 제공 CAPD Care 실행 화면\n- C:\\Users\\user\\Desktop\\capd\\AI 설문 생성.png\n- C:\\Users\\user\\Desktop\\capd\\AI 설문 확인.png"}
+{"kind":"slide","id":"sl/v2h9av","slide":12,"title":"012","textShapes":8}
+{"kind":"textbox","id":"sh/6pkvmh43","slide":12,"text":"012","textPreview":"012","textChars":3,"textLines":1,"bbox":[56,40,60,30]}
+{"kind":"textbox","id":"sh/dsvehw3u","slide":12,"text":"AI 건강 상태 분석 리포트","textPreview":"AI 건강 상태 분석 리포트","textChars":15,"textLines":1,"bbox":[56,74,1110,54]}
+{"kind":"textbox","id":"sh/sr2dorm9","slide":12,"text":"기간별 건강 지표를 보고서 형태로 정리해 진료 시 참고합니다","textPreview":"기간별 건강 지표를 보고서 형태로 정리해 진료 시 참고합니다","textChars":33,"textLines":1,"bbox":[58,133,1080,32]}
+{"kind":"shape","id":"sh/fudwjmlk","slide":12,"bbox":[56,178,1168,2]}
+{"kind":"textbox","id":"sh/1wvelw3q","slide":12,"text":"보고서 구성","textPreview":"보고서 구성","textChars":6,"textLines":1,"bbox":[920,238,240,34]}
+{"kind":"textbox","id":"sh/0vmxsrm5","slide":12,"text":"• 기간별 주요 지표 추이\n\n• 체중, 혈압, 공복혈당, 제수량\n\n• 저장 및 PDF 내보내기","textPreview":"• 기간별 주요 지표 추이 |  | • 체중, 혈압, 공복혈당, 제수량 |  | • 저장 및 PDF 내보내기","textChars":52,"textLines":5,"bbox":[920,305,250,170]}
+{"kind":"shape","id":"sh/vy9w72lg","slide":12,"bbox":[920,522,222,74]}
+{"kind":"textbox","id":"sh/ux0vex4v","slide":12,"text":"의료진 검토를 위한\n참고용 요약 화면","textPreview":"의료진 검토를 위한 | 참고용 요약 화면","textChars":20,"textLines":2,"bbox":[940,539,182,42]}
+{"kind":"textbox","id":"sh/c365gn25","slide":12,"text":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textPreview":"CAPD Care | 복막투석 환자 맞춤형 관리 시스템","textChars":30,"textLines":1,"bbox":[56,682,600,18]}
+{"kind":"textbox","id":"sh/x4fm983q","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1190,680,34,18]}
+{"kind":"image","id":"im/jihgbe1s","slide":12,"name":"","geometry":"roundRect","alt":"AI 건강 상태 분석 리포트 화면","bbox":[80,205,770,466]}
+{"kind":"notes","id":"nt/v2h9av","slide":12,"text":"화면 출처: 사용자 제공 CAPD Care 실행 화면\n- C:\\Users\\user\\Desktop\\capd\\ai보고서.png"}
+{"kind":"slide","id":"sl/iyr7ye","slide":13,"title":"구현 구성","textShapes":12}
+{"kind":"textbox","id":"sh/zihgbm9o","slide":13,"text":"구현 구성","textPreview":"구현 구성","textChars":5,"textLines":1,"bbox":[58,56,300,44]}
+{"kind":"textbox","id":"sh/03qx4rq9","slide":13,"text":"프론트엔드만으로도 발표 시연이 가능하도록 목업 API와 저장소를 구성했습니다","textPreview":"프론트엔드만으로도 발표 시연이 가능하도록 목업 API와 저장소를 구성했습니다","textChars":42,"textLines":1,"bbox":[58,112,940,28]}
+{"kind":"shape","id":"sh/l4zydwru","slide":13,"bbox":[58,224,254,190]}
+{"kind":"textbox","id":"sh/m5sf618f","slide":13,"text":"React + Vite","textPreview":"React + Vite","textChars":12,"textLines":1,"bbox":[82,252,206,28]}
+{"kind":"textbox","id":"sh/n61gf690","slide":13,"text":"화면과 사용자 흐름 구현","textPreview":"화면과 사용자 흐름 구현","textChars":13,"textLines":1,"bbox":[82,310,206,62]}
+{"kind":"shape","id":"sh/87ax8rq5","slide":13,"bbox":[360,224,254,190]}
+{"kind":"textbox","id":"sh/98jyhwrq","slide":13,"text":"Mock API","textPreview":"Mock API","textChars":8,"textLines":1,"bbox":[384,252,206,28]}
+{"kind":"textbox","id":"sh/29ofux8v","slide":13,"text":"백엔드 없이 데이터 요청 재현","textPreview":"백엔드 없이 데이터 요청 재현","textChars":16,"textLines":1,"bbox":[384,310,206,62]}
+{"kind":"shape","id":"sh/3axw329g","slide":13,"bbox":[662,224,254,190]}
+{"kind":"textbox","id":"sh/ju9kvulc","slide":13,"text":"Local Storage","textPreview":"Local Storage","textChars":13,"textLines":1,"bbox":[686,252,206,28]}
+{"kind":"textbox","id":"sh/it03mp4r","slide":13,"text":"입력, 설문, 승인 상태 유지","textPreview":"입력, 설문, 승인 상태 유지","textChars":16,"textLines":1,"bbox":[686,310,206,62]}
+{"kind":"shape","id":"sh/5gb2x43i","slide":13,"bbox":[964,224,254,190]}
+{"kind":"textbox","id":"sh/kfilozmx","slide":13,"text":"데모 데이터","textPreview":"데모 데이터","textChars":6,"textLines":1,"bbox":[988,252,206,28]}
+{"kind":"textbox","id":"sh/vq9krul0","slide":13,"text":"10명 환자, 3,650일 기록,\n18,250건 교환 내역","textPreview":"10명 환자, 3,650일 기록, | 18,250건 교환 내역","textChars":32,"textLines":2,"bbox":[988,310,206,62]}
+{"kind":"shape","id":"sh/ap03ip4v","slide":13,"bbox":[58,530,1164,2]}
+{"kind":"textbox","id":"sh/xsr2tk36","slide":13,"text":"CAPD Care","textPreview":"CAPD Care","textChars":9,"textLines":1,"bbox":[58,570,350,44]}
+{"kind":"textbox","id":"sh/wrilkzml","slide":13,"text":"환자의 일상 기록을 의료진의 진료 판단에 연결합니다","textPreview":"환자의 일상 기록을 의료진의 진료 판단에 연결합니다","textChars":28,"textLines":1,"bbox":[58,627,760,30]}
+{"kind":"notes","id":"nt/iyr7ye","slide":13,"text":"화면 출처: 사용자 제공 CAPD Care 실행 화면\n"}
