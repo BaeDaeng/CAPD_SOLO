@@ -1,0 +1,131 @@
+/* Tailwind CSS */
+@import "tailwindcss";
+
+/* 기본 스타일 및 폰트 일괄 적용 */
+@layer base {
+  html, body {
+    /* 기본 배경색/글자색 */
+    @apply bg-gray-100 text-gray-800 antialiased;
+  }
+
+/* 스크롤바 디자인 */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+}
+
+@media (min-width: 768px) {
+  .auth-page input,
+  .auth-page select {
+    padding-top: 0.875rem !important;
+    padding-bottom: 0.875rem !important;
+    font-size: 1rem;
+  }
+
+  .auth-page label {
+    font-size: 0.95rem;
+  }
+
+  .auth-page button:not(.absolute) {
+    min-height: 2.75rem;
+  }
+}
+
+.ios-fixed-time-input {
+  line-height: 1 !important;
+  min-width: 0 !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ios-fixed-time-input::-webkit-date-and-time-value {
+  min-height: 1em;
+  text-align: left;
+}
+
+.ios-fixed-time-input::-webkit-calendar-picker-indicator {
+  margin: 0;
+  padding: 0;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+
+  body * {
+    visibility: hidden !important;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: auto !important;
+    background: #ffffff !important;
+  }
+
+  .ai-report-page {
+    height: auto !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+  }
+
+  .ai-report-no-print,
+  .ai-report-print-actions {
+    display: none !important;
+  }
+
+  .ai-report-print-root,
+  .ai-report-print-root * {
+    visibility: visible !important;
+  }
+
+  .ai-report-layout {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .ai-report-print-root,
+  .ai-report-print-shell,
+  .ai-report-scroll {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .ai-report-print-root {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  .ai-report-print-shell {
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .ai-report-scroll {
+    padding: 20px 0 0 !important;
+  }
+
+  .ai-report-print-root .recharts-responsive-container {
+    min-height: 96px !important;
+  }
+}

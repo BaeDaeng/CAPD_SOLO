@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "dataset_type": "synthetic_capd_numeric",
+  "year": 2025,
+  "seed": 20250413,
+  "patient_count": 10,
+  "patients": [
+    {
+      "patient_id": "patient_001",
+      "sex": "F",
+      "age": 55,
+      "primary_pattern": "stable_non_diabetic",
+      "comorbidities": []
+    },
+    {
+      "patient_id": "patient_002",
+      "sex": "M",
+      "age": 67,
+      "primary_pattern": "diabetic",
+      "comorbidities": [
+        "type_2_diabetes"
+      ]
+    },
+    {
+      "patient_id": "patient_003",
+      "sex": "F",
+      "age": 62,
+      "primary_pattern": "hypertension_dominant",
+      "comorbidities": [
+        "hypertension"
+      ]
+    },
+    {
+      "patient_id": "patient_004",
+      "sex": "M",
+      "age": 59,
+      "primary_pattern": "overweight_fluid_retention",
+      "comorbidities": [
+        "hypertension",
+        "overweight"
+      ]
+    },
+    {
+      "patient_id": "patient_005",
+      "sex": "M",
+      "age": 44,
+      "primary_pattern": "younger_low_risk",
+      "comorbidities": []
+    },
+    {
+      "patient_id": "patient_006",
+      "sex": "F",
+      "age": 76,
+      "primary_pattern": "elderly_frail",
+      "comorbidities": [
+        "frailty",
+        "hypertension"
+      ]
+    },
+    {
+      "patient_id": "patient_007",
+      "sex": "M",
+      "age": 62,
+      "primary_pattern": "mixed_diabetes_hypertension",
+      "comorbidities": [
+        "type_2_diabetes",
+        "hypertension"
+      ]
+    },
+    {
+      "patient_id": "patient_008",
+      "sex": "F",
+      "age": 52,
+      "primary_pattern": "infection_risk_cloudy_dialysate",
+      "comorbidities": []
+    },
+    {
+      "patient_id": "patient_009",
+      "sex": "M",
+      "age": 57,
+      "primary_pattern": "declining_residual_function",
+      "comorbidities": [
+        "hypertension"
+      ]
+    },
+    {
+      "patient_id": "patient_010",
+      "sex": "F",
+      "age": 59,
+      "primary_pattern": "borderline_variable",
+      "comorbidities": [
+        "pre_diabetes"
+      ]
+    }
+  ]
+}
