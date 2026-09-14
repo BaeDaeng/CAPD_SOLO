@@ -12,7 +12,6 @@ const RESERVATION_LOOKAHEAD_DAYS = 90;
 
 export default function QuestionManagePage() {
   const { id } = useParams();
-  const patientId = Number(id);
   const [selectedReservationId, setSelectedReservationId] = useState(null);
   const [activeTab, setActiveTab] = useState('PENDING');
   const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
@@ -22,9 +21,9 @@ export default function QuestionManagePage() {
   const { data: reservations = [] } = useDoctorReservationsByDateRange(reservationStartDate, reservationEndDate);
   const patientReservations = useMemo(() => (
     reservations
-      .filter(reservation => Number(reservation.patientId) === patientId)
+      .filter(reservation => String(reservation.patientId) === String(id))
       .sort((a, b) => String(b.reservationDate).localeCompare(String(a.reservationDate)))
-  ), [patientId, reservations]);
+  ), [id, reservations]);
   const patientReservation = patientReservations.find(reservation => String(reservation.reservationId) === String(selectedReservationId)) || patientReservations[0];
   const reservationId = patientReservation?.reservationId;
   const { data: questions = [], reload } = useDoctorQuestions(reservationId);

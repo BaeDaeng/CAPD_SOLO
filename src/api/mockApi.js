@@ -2,6 +2,7 @@ const SESSION_KEY = 'capd_auth_session';
 const OVERRIDES_KEY = 'capd_mock_record_overrides';
 const SURVEY_ANSWERS_KEY = 'capd_mock_survey_answers';
 const CHAT_HISTORY_KEY = 'capd_mock_chat_history';
+const QUESTION_STATUS_KEY = 'capd_mock_question_statuses';
 const PASSWORD = 'c*123456789';
 
 const PATIENT_NAMES = ['김하늘', '이준서', '박서연', '최민준', '정다은', '윤지후', '한유진', '서지민', '강도윤', '임수아'];
@@ -44,6 +45,21 @@ const demoQuestions = (reservationId) => ([
   { questionId: 103, reservationId, question: '최근 발열 또는 오한이 있었나요?', type: 'CHOICE', options: '["없음","미열","38℃ 이상"]', questionReason: '감염 가능성을 확인하기 위한 질문입니다.', status: 'APPROVED' },
   { questionId: 104, reservationId, question: '평소보다 붓거나 체중이 급격히 늘었다고 느끼나요?', type: 'CHOICE', options: '["없음","조금 있음","뚜렷함"]', questionReason: '체액 변화 가능성을 확인하는 질문입니다.', status: 'APPROVED' },
   { questionId: 105, reservationId, question: '의료진에게 미리 전달하고 싶은 특이사항이 있다면 적어주세요.', type: 'TEXT', options: '[]', questionReason: '진료 전에 의료진에게 전달할 내용을 자유롭게 작성하는 항목입니다.', status: 'APPROVED' },
+]);
+const doctorDemoQuestions = (reservationId) => {
+  const statuses = getStoredObject(QUESTION_STATUS_KEY);
+  const questions = [
+    { questionId: 201, reservationId, question: '최근 투석액의 색이나 투명도에 변화가 있었나요?', type: 'MULTIPLE_CHOICE', options: '["없음","약간 혼탁함","뚜렷하게 혼탁함"]', questionReason: '복막염 위험 신호를 조기에 확인하기 위해 추천된 문항입니다.', status: 'PENDING' },
+    { questionId: 202, reservationId, question: '최근 일주일 동안 체중이 2kg 이상 증가한 적이 있나요?', type: 'YES_NO', options: '["예","아니오"]', questionReason: '체액 과다 가능성을 확인하기 위해 최근 체중 변화를 묻습니다.', status: 'PENDING' },
+    { questionId: 203, reservationId, question: '최근 복통 또는 배액 시 불편감이 있었나요?', type: 'MULTIPLE_CHOICE', options: '["없음","가끔 있음","지속됨"]', questionReason: '복부 증상은 진료 전 의료진이 확인해야 할 핵심 정보입니다.', status: 'APPROVED' },
+    { questionId: 204, reservationId, question: '최근 수면 상태는 어떠셨나요?', type: 'MULTIPLE_CHOICE', options: '["좋음","보통","나쁨"]', questionReason: '현재 예약 목적과 직접 관련성이 낮아 검토가 필요한 문항입니다.', status: 'REJECTED' },
+  ];
+  return questions.map(question => ({ ...question, status: statuses[String(question.questionId)] || question.status }));
+};
+const doctorDemoAnswers = (reservationId, patientId) => ([
+  { answerId: `answer-${reservationId}-201`, questionId: 201, patientId, question: '최근 투석액의 색이나 투명도에 변화가 있었나요?', answer: '없음', createdAt: `${dateKeyAfter(-1)}T09:15:00` },
+  { answerId: `answer-${reservationId}-202`, questionId: 202, patientId, question: '최근 일주일 동안 체중이 2kg 이상 증가한 적이 있나요?', answer: '아니오', createdAt: `${dateKeyAfter(-1)}T09:15:00` },
+  { answerId: `answer-${reservationId}-203`, questionId: 203, patientId, question: '최근 복통 또는 배액 시 불편감이 있었나요?', answer: '가끔 있음', createdAt: `${dateKeyAfter(-1)}T09:15:00` },
 ]);
 const symptomReply = (text) => {
   const message = String(text || '').toLowerCase();
@@ -217,12 +233,23 @@ export async function mockApiRequest(config) {
     saveStoredObject(SURVEY_ANSWERS_KEY, allAnswers);
     return allAnswers[reservationId];
   }
+  if (url.match(/^\/api\/surveys\/[^/]+\/answers$/) && normalizedMethod === 'get') {
+    const reservationId = decodeURIComponent(url.split('/')[3]);
+    return getStoredObject(SURVEY_ANSWERS_KEY)[reservationId] || doctorDemoAnswers(reservationId, patientId);
+  }
   if (url.match(/^\/api\/surveys\/questions\/[^/]+\/explain$/)) {
     const questionId = Number(decodeURIComponent(url.split('/')[4]));
     const question = demoQuestions('demo').find(item => item.questionId === questionId);
     return { explanation: question?.questionReason || '증상과 최근 변화를 의료진에게 알리기 위한 질문입니다.' };
   }
-  if (url.match(/^\/api\/surveys\/[^/]+\/questions$/)) return demoQuestions(decodeURIComponent(url.split('/')[3]));
+  if (url.match(/^\/api\/surveys\/[^/]+\/questions$/)) return doctorDemoQuestions(decodeURIComponent(url.split('/')[3]));
+  if (url.match(/^\/api\/surveys\/questions\/[^/]+\/(approve|reject|reset)$/)) {
+    const [, questionId, action] = url.match(/^\/api\/surveys\/questions\/([^/]+)\/(approve|reject|reset)$/);
+    const statuses = getStoredObject(QUESTION_STATUS_KEY);
+    statuses[String(questionId)] = action === 'approve' ? 'APPROVED' : action === 'reject' ? 'REJECTED' : 'PENDING';
+    saveStoredObject(QUESTION_STATUS_KEY, statuses);
+    return { questionId: Number(questionId), status: statuses[String(questionId)] };
+  }
   if (url === '/api/anomaly/' + patientId) return [];
   if (url.startsWith('/api/anomaly/')) return [];
   if (url.startsWith('/api/reports/')) return [];
